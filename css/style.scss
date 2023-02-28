@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+$width: 1366px;
+$background:#FDFDFB;
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $background;
+    min-width: $width;
+    max-width: $width;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 auto;
+    padding: 35px 100px 26px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .header--logo {
+        margin-right: 267px;
+    }
+
+    .header--menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        color: #555248;
+        font-size: 14px;
+        line-height: 16px;
+        margin-right: 278px;
+    }
+
+    .header--links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: flex-end;
+
+        .heart {
+            width: 28px;
+            height: 22px;
+            background-image: url('../src/heart.svg');
+            background-position: bottom right;
+            padding: 2px 4px 10px 15px;
+
+            p {
+                font-size: 8px;
+                line-height: 9px;
+                font-family: 'Roboto', sans-serif;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    height: 768px;
+    background-image: url("../src/Ellipse.svg");
+    background-repeat: no-repeat;
+    background-position: right 401px center;
+
+    .hero--text {
+        font-family: 'Playfair Display', sans-serif;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            width: 258px;
+            color: rgba(27, 26, 23, 0.82);
+            margin-bottom: 64px;
+        }
+
+        h1 {
+            font-size: 45px;
+            line-height: 60px;
+            display: block;
+            width: 408px;
+            text-align: right;
+            margin-left: -65px;
+            background-image: url("../src/line.svg");
+            background-repeat: no-repeat;
+            background-position: center left;
+            color: #1B1A17;
+        }
+
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+            color: #1B1A17;
+            margin-bottom: 39px;
+        }
+
+        a {
+            display: block;
+            padding: 27px 37px;
+            width: fit-content;
+            height: fit-content;
+            color: white;
+            background-color: #444240;
+            border: 0;
+            font-family: "Roboto";
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    .hero--image {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+
+        img {
+            height: 805px;
+        }
+
+        p{
+            display:block;
+            font-family: 'Prata',sans-serif;
+            font-size: 16px;
+            line-height: 16px;
+            height: fit-content;
+        }
+
+        .hero--image--price{
+            margin-top:148px;
+            margin-right: -80px;
+            width: 140px;
+            text-align: left;
+            background-image: url('../src/line.svg');
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+
+        .hero--image--size{
+            align-self: flex-end;
+            margin-bottom: 142.4px;
+            margin-left: -115px;
+            width: 187px;
+            text-align: right;
+            background-image: url('../src/line.svg');
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+    }
+}
