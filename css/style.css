@@ -229,7 +229,8 @@ header .header--links .heart p {
 }
 
 .slider {
-  width: 100vw;
+  max-width: 100%;
+  min-width: 1366px;
   background-color: #fdfdfb;
 }
 .slider .slider--content {
@@ -338,4 +339,40 @@ header .header--links .heart p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+footer {
+  max-width: 100vw;
+  min-width: 1366px;
+  background-color: #444240;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+footer .footer--content {
+  width: 1366px;
+  margin: 0 auto;
+  padding: 79px 183px 67px 185px;
+  display: flex;
+  flex-direction: row;
+  gap: 118px;
+  align-items: flex-start;
+}
+footer .footer--content .footer--content--column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footer--content .footer--content--column img {
+  margin-top: -12px;
+  margin-bottom: 26px;
+}
+footer .footer--content .footer--content--column h3 {
+  margin-bottom: 33px;
+  font-size: 14px;
+  line-height: 16px;
+}
+footer .footer--content .footer--content--column a, footer .footer--content .footer--content--column p {
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
 }
