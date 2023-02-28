@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 a {
   text-decoration: none;
 }
@@ -127,6 +128,7 @@ header .header--links .heart p {
   font-size: 16px;
   line-height: 16px;
   height: fit-content;
+  color: #1B1A17;
 }
 .hero .hero--image .hero--image--price {
   margin-top: 148px;
@@ -146,4 +148,30 @@ header .header--links .heart p {
   background-image: url("../src/line.svg");
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+.models {
+  padding-top: 50px;
+  padding-bottom: 86px;
+}
+.models h2 {
+  font-family: "Playfair display", sans-serif;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+  font-weight: 400;
+}
+.models .models--watch-all {
+  margin-left: 1164px;
+  height: 26.5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #444240;
+  border-bottom: 1px solid #C4C0B6;
+  padding-bottom: 11.5px;
+  margin-bottom: 25.5px;
 }
