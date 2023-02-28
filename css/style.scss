@@ -14,7 +14,6 @@ a {
 body {
     background-color: $background;
     min-width: $width;
-    max-width: $width;
     margin: 0 auto;
 }
 
@@ -25,6 +24,7 @@ body {
 }
 
 header {
+    width: $width;
     margin: 0 auto;
     padding: 35px 100px 26px 100px;
     display: flex;
@@ -72,6 +72,8 @@ header {
 }
 
 .hero {
+    margin:0 auto;
+    width: $width;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,9 +173,11 @@ header {
 }
 
 .models{
+    width: 100vw;
     padding-top:50px;
     padding-bottom: 86px;
-
+    background-color: white;
+    
     h2{
         font-family: 'Playfair display',sans-serif;
         width: fit-content;
@@ -194,6 +198,59 @@ header {
         color:#444240;
         border-bottom: 1px solid #C4C0B6;
         padding-bottom: 11.5px;
-        margin-bottom: 25.5px;
+    }
+
+    .models--cards{
+        display: flex;
+        flex-direction: row;
+        gap:34px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        .models--cards--item{
+            background-color: #FDFDFB;
+            width: 370px;
+            padding:40px 29px;
+
+            .models--cards--item--brand{
+                margin-left: 11px;
+                margin-bottom: 10px;
+                font-family: 'Playfair display' , sans-serif;
+                font-size: 14px;
+                line-height: 15px;
+                font-weight: 700;
+            }
+
+            .models--cards--item--price{
+                margin-left: 11px;
+                font-family: 'Prata', sans-serif;
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            img{
+                display: block;
+                background-image: url('../src/background-elipse.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                place-items: center;
+                margin-bottom: 19px;
+            }
+
+            .models--cards--item--more{
+                color:#1B1A17;
+                font-family: 'Playfire display',sans-serif;
+                font-family: 16px;
+                line-height: 21px;
+                width:fit-content;
+                padding-left: 48px;
+                background-image: url('../src/line-short.svg');
+                background-repeat: no-repeat;
+                background-position: left center;
+                margin-left: 11px;
+            }
+        }
     }
 }
